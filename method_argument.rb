@@ -19,13 +19,13 @@ def method4(a,b,*args)
     p a,b, args[0]
 end
 
-def method5(a,b,*args)
+def method5(a,b,*args,&c)
     p a,b
-    p args
+    p args,c
 end
 
 method(2,3)
 method2()
 method3(2,3)
 method4(2,3,5)
-method5(2,3,5,6,7)
+method5(2,3,5,6,7,8)
