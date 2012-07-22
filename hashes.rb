@@ -6,7 +6,7 @@
     hash = {"numJumps" => @numJumps,"allFollowing"=>@allFollowing,"numCities"=>@numCities}
     maximum = hash.values.max()
     
-    hash.each{ |key,value| hash[key] = value/(maximum ) *100.0 }
+    hash.map{ |key,value| hash[key] = value/(maximum ) *100.0 }
     
     puts hash
 
